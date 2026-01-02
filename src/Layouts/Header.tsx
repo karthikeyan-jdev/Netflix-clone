@@ -3,10 +3,10 @@ import Navbar from "../Components/Navbar";
 
 const Header = () => {
   return (
-    <div className="h-[78vh] sm:h-screen bg-cover bg-center relative ">
+    <div className="h-[85vh] sm:h-screen bg-cover bg-center relative ">
       <Navbar />
       <div
-        className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 
+        className="absolute top-4/7 left-1/2 -translate-x-1/2 -translate-y-1/2 
                 text-white w-[90%] sm:w-[80%] md:w-[60%] xl:w-[40%]  text-center"
       >
         <h1 className="text-[34px] sm:text-[36px] lg:text-[46px] xl:text-[52px] font-bold ">
