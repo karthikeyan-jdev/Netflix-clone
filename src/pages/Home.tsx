@@ -1,7 +1,10 @@
+import TrendingMovies from "../Components/TrendingMovies"
 
 const Home = () => {
   return (
-    <div>Home</div>
+    <div className="">
+      <TrendingMovies/>
+    </div>
   )
 }
 
