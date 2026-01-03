@@ -3,6 +3,7 @@ import downIcon from "../assets/images/down-icon.png";
 import watchIcon from "../assets/images/watch-icon.png";
 import kidsIcon from "../assets/images/kids-icon.png";
 
+
 export interface JoinBenefit {
   id: number;
   title: string;
@@ -46,5 +47,4 @@ export function getJoinBenefits(): Promise<JoinBenefit[]> {
     setTimeout(() => {
       resolve(joinBenefits);
     }, 2000);
-  });
-}
+  })}
