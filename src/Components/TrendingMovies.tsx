@@ -1,11 +1,12 @@
 import { getTopMovies } from "../data/TrendingMovies";
 import useLocalArr from "../hooks/useLocalArr";
+import Loading from "./Loading";
 
 const TrendingMovies = () => {
- const {data,loading} =  useLocalArr(getTopMovies)  
- if (loading) return <div className="text-white text-center">Loading...</div>;
+  const { data, loading } = useLocalArr(getTopMovies);
+  if (loading) return <Loading />;
   return (
-    <div className="pt-12 ">
+    <div className="pt-12 contant-width ">
       <h1 className="headline">Trending Now</h1>
       <ul className="flex gap-4 overflow-x-auto scrollbar-hide scroll-smooth px-2 ">
         {data.map((item) => (

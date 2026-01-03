@@ -3,7 +3,6 @@ import downIcon from "../assets/images/down-icon.png";
 import watchIcon from "../assets/images/watch-icon.png";
 import kidsIcon from "../assets/images/kids-icon.png";
 
-
 export interface JoinBenefit {
   id: number;
   title: string;
@@ -42,9 +41,10 @@ export const joinBenefits: JoinBenefit[] = [
   },
 ];
 
-export function getJoinBenefits(): Promise<JoinBenefit[]> {
-  return new Promise((resolve) => {
-    setTimeout(() => {
-      resolve(joinBenefits);
-    }, 2000);
-  })}
+// export async function getJoinBenefits(): Promise<JoinBenefit[]> {
+//   return await new Promise((resolve) => {
+//     setTimeout(() => {
+//       resolve(joinBenefits);
+//     }, 2000);
+//   });
+// }
