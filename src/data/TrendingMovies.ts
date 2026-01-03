@@ -1,4 +1,12 @@
-export const top10List = [
+export interface Movie {
+  id: number;
+  title: string;
+  rank: number;
+  image: string;
+  delay: number;
+}
+
+export const top10List: Movie[] = [
   {
     id: 1,
     title: "Stranger Things",
@@ -80,3 +88,11 @@ export const top10List = [
     delay: 3600,
   },
 ];
+
+export const getTopMovies = async (): Promise<Movie[]> => {
+  return await new Promise((resolve) => {
+    setTimeout(() => {
+      resolve(top10List);
+    }, 2000);
+  });
+};

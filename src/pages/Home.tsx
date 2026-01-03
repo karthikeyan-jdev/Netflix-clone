@@ -1,11 +1,13 @@
-import TrendingMovies from "../Components/TrendingMovies"
+import JoinBenefits from "../Components/JoinBenefits";
+import TrendingMovies from "../Components/TrendingMovies";
 
 const Home = () => {
   return (
     <div className="">
-      <TrendingMovies/>
+      <TrendingMovies />
+      <JoinBenefits/>
     </div>
-  )
-}
+  );
+};
 
-export default Home
+export default Home;

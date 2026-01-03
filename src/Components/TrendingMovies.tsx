@@ -1,15 +1,17 @@
-import { top10List } from "../data/TrendingMovies";
+import { getTopMovies } from "../data/TrendingMovies";
+import useLocalArr from "../hooks/useLocalArr";
 
 const TrendingMovies = () => {
+ const {data,loading} =  useLocalArr(getTopMovies)  
+ if (loading) return <div className="text-white text-center">Loading...</div>;
   return (
-    <div className="p-12 px-4 md:px-8 ">
-      <h1 className="p-2 font-bold text-2xl text-white">Trending Now</h1>
-
+    <div className="pt-12 ">
+      <h1 className="headline">Trending Now</h1>
       <ul className="flex gap-4 overflow-x-auto scrollbar-hide scroll-smooth px-2 ">
-        {top10List.map((item) => (
+        {data.map((item) => (
           <li
             key={item.id}
-            className="relative min-w-25 sm:min-w-42 md:min-w-48  
+            className="relative min-w-25 sm:min-w-30 md:min-w-48  
                    transition-transform duration-300 hover:scale-105"
           >
             <img
