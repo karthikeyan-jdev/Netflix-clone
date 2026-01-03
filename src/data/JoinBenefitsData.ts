@@ -1,7 +1,7 @@
 import tvIcon from "../assets/images/tv-icon.png";
 import downIcon from "../assets/images/down-icon.png";
 import watchIcon from "../assets/images/watch-icon.png";
-import kidsIcon from "../assets/images/Kids-icon.png";
+import kidsIcon from "../assets/images/kids-icon.png";
 
 export interface JoinBenefit {
   id: number;
